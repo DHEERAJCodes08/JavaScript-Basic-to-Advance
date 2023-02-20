@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics Functions</title>
+</head>
+<body>
+
+    <h1>
+        Hello Babe❤️
+    </h1>
+
+
+    <script>
+        //this Program is to Display the types of functions
+
+        // Create an functions for preparing the Maggie Recepies!  here Maggie , Water ,veggis Are known as Parameters And Are Changable!
+
+        function CoockMaggie(maggie,water,vegges){
+            console.log("Your Maggie wil be ready in  "
+            + maggie * 2
+            + " minutes "                                          //But here Nothing is return its just showing
+            + "Ingredients used are:: "
+            + water + " Cups of Water Required "
+            +vegges + " types of vegges  ")
+
+        }
+
+        CoockMaggie(2,4,5); //function Call
+
+
+
+        //So now creating an return function
+
+
+
+    </script>
+
+
+    <script>
+
+
+            let bread=prompt("Enter the Bread you Want :: ")
+            let vegges=prompt("Enter the types of vegges :: ")    //function initialise or Declare
+            let souce=prompt("Enter the types of souce") 
+            
+            function PissaType(bread,vegges,souce){
+                let pissa= " Bread " + bread  +  " vegges " + vegges +  " souce " + souce  + " Your Pissa is Ready! "         //function call
+                return pissa;
+            }
+            //Now We are PUtting the Complete PissaType Function Into New Variable ie Vegpisa
+
+            let vegPissa=PissaType(bread,vegges,souce);   //Now we display this on the Console Screen!
+            console.log(vegPissa)
+
+    </script>
+    
+</body>
+</html>

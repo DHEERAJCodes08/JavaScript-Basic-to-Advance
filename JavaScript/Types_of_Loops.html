@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+
+
+    <script>
+    //This program is to implement Loops or Conditional loop in Javascript ! 
+
+    // Starting with our first kind of loop! 
+    // 1) for Loop
+
+/*     for (let i = 5; i < 51; i=i + 5) {      // this Program is to print  the  5 tabel upto 50!
+        console.log(i);
+        
+    }; */
+
+    
+     
+    //Next we have the Second Condtional Statements is While!
+    // 2)  While loop
+    
+/*     i=0;
+    while(i<10){
+        console.log(i);     // This is the Example of using While Loop to display 0-9 !
+        i++;
+    }; */
+
+
+    //Next we are having the do while loop 
+    // 3) do While loop
+/*    i=1
+    do{
+        console.log(i);   //Although the condition Becomes false here but since its an do while lop it exceutes compulserry  for the first time !
+        i++;   
+    }
+    while(i>5) */
+
+
+    //Next we have the for in  loop , its an Special type of loop in Javascript 
+    // Take the refrence of the Notes
+
+    // 4) for in 
+
+    // execution it through the object !
+
+    let animals={
+        name:"Zebra",   //this is an Object
+        leg:4
+    };
+
+    for(let Key in animals){          //1) We can diplay it through ( . ) notation
+        console.log(animals.name);
+    }
+
+    //or
+
+    for( let Key in animals){
+        console.log(animals["leg"]);   //2) We can also display it trough the ( [] ) Square notation but here we need to give the double Quotes!
+
+    }
+
+
+    //Now we can Execuite it through the Array represrentation!
+    // Here in Array representation the Dot ( . ) notation Dosent Works
+ 
+    let names=["Sameer","Saurab","Sanket","Dheeraj"];
+    for(let index in names){
+        /* console.log(index) */            //its only for the displayig index!
+        console.log(index,names[index])
+    }
+
+
+
+
+    //The Next and the Finnal LOop is for off!
+    // 5) for off
+
+      // it is also used  with Array ! so no dot Notation Used !
+
+      let games=["football","BasketBal","Vollyball","Chess"]
+      for( let index of games){
+        console.log(index)    //for here it dosenot prints index since it is ( of )!
+      }
+
+
+
+
+
+    </script>
+</body>
+</html>
